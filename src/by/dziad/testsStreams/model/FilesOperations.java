@@ -63,6 +63,34 @@ public class FilesOperations {
 		}
 	}
 
+	public static void writeInfoToNewFileWithUTF(String fileName, String newInformation) {
+		/*
+		 * create new file, write new String in it, using UTF-8
+		 */
+
+		OutputStreamWriter writer = null;
+		try {
+			writer = new OutputStreamWriter(new FileOutputStream(fileName), "UTF-8");
+			writer.write(newInformation);
+		} catch (UnsupportedEncodingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			try {
+				writer.close();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	}
+
 	public static char[] takeCharFromInputStreamFileWithCharSet(String fileName, char[] buffer) {
 		InputStreamReader reader = null;
 
@@ -88,26 +116,6 @@ public class FilesOperations {
 		}
 
 		return buffer;
-	}
-
-	public static void createNewFileWithInformation(String newFileName, String string) {
-		try {
-			OutputStreamWriter writer = new OutputStreamWriter(new FileOutputStream(newFileName), "UTF-8");
-			try {
-				writer.write(string);
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-
-		} catch (UnsupportedEncodingException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-
 	}
 
 }

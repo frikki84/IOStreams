@@ -24,24 +24,24 @@ public class CharsToWords {
 		ArrayList<ArrayList<String>> finalList = new ArrayList<>();
 		ArrayList<String> list = new ArrayList<>();
 		for (char i : buffer) {
-			if ( i!='\n') {
-				if (i != ' ') {
-					res += i;
-				} else {
-					System.out.println(res);				
-					
-					list.add(res);
-					res = "";
-				}
-
-			} else {
-				System.out.println( "Это перенос " + i);
+			if (i != '\n' && i != ' ' && i != '\r') {
+				res += i;
+			} else if (i == ' ') {
+				list.add(res);
+				res = "";
+			} else if (i == '\n') {
+				list.add(res);
 				ArrayList<String> midList = new ArrayList<>(list);
 				finalList.add(midList);
 				list.clear();
+				res = "";
+			} else {
+				continue;
 			}
 			
+
 		}
 		return finalList;
 	}
+
 }
