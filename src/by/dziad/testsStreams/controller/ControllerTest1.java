@@ -9,6 +9,8 @@ import by.dziad.testsStreams.model.FilesOperations;
 
 /*
 Дан текстовый файл, содержащий целые числа. Удалить из него все четные числа.
+
+Given a text file containing integers. Remove all even numbers from it.
 */
 
 public class ControllerTest1 {

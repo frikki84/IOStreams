@@ -7,7 +7,11 @@ import java.util.regex.Pattern;
 import by.dziad.testsStreams.model.CharsToWords;
 import by.dziad.testsStreams.model.FilesOperations;
 
-/*В данном текстовом файле удалить все слова, которые содержат хотя бы одну цифру.*/
+/*
+  В данном текстовом файле удалить все слова, которые содержат хотя бы одну цифру.
+  
+ In this text file, delete all words that contain at least one digit.
+ */
 
 public class ControllerTest2 {
 	public static void main(String[] args) {

@@ -15,6 +15,9 @@ import by.dziad.testsStreams.model.FilesOperations;
 Дан текстовый файл. Создать новый файл, каждая строка которого получается из соответствующей строки 
 исходного файла перестановкой слов в обратном порядке.
 
+
+There is a text file. Create a new file, each line of which is obtained from the corresponding line
+source file by rearranging words in reverse order.
 */
 
 public class ControllerTest3 {

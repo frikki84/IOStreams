@@ -8,9 +8,13 @@ import by.dziad.testsStreams.model.FilesOperations;
 import by.dziad.testsStreams.model.Validator;
 
 /*
-Дан текстовый файл. 
-Создать новый файл, состоящий из тех строк исходного файла, из чисел 
-которых можно составить арифметическую прогрессию.
+Р”Р°РЅ С‚РµРєСЃС‚РѕРІС‹Р№ С„Р°Р№Р». 
+РЎРѕР·РґР°С‚СЊ РЅРѕРІС‹Р№ С„Р°Р№Р», СЃРѕСЃС‚РѕСЏС‰РёР№ РёР· С‚РµС… СЃС‚СЂРѕРє РёСЃС…РѕРґРЅРѕРіРѕ С„Р°Р№Р»Р°, РёР· С‡РёСЃРµР» 
+РєРѕС‚РѕСЂС‹С… РјРѕР¶РЅРѕ СЃРѕСЃС‚Р°РІРёС‚СЊ Р°СЂРёС„РјРµС‚РёС‡РµСЃРєСѓСЋ РїСЂРѕРіСЂРµСЃСЃРёСЋ.
+
+There is a text file.
+Create a new file, consisting of those lines of the source file, from the numbers of
+which you can make an arithmetic progression.
 */
 
 public class ControllerTest4 {
