@@ -18,6 +18,23 @@ public class CharsToWords {
 		}
 		return list;
 	}
+	
+	public static ArrayList<Integer> giveIntegerArrayListFromCharBuffer(char[] buffer) {
+		String res = "";
+		ArrayList<Integer> list = new ArrayList<>();
+		for (char i : buffer) {
+			if (i != ' ') {
+				res += i;
+			} else {
+				Integer item = Integer.parseInt(res);
+				list.add(item);
+				res = "";
+			}
+
+		}
+		return list;
+	}
+	
 
 	public static ArrayList<ArrayList<String>> giveArrayFromWordPerLines(char[] buffer) {
 		String res = "";
